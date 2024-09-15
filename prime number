@@ -1,0 +1,9 @@
+#prime number using functions
+def prime(num):
+    for den in range(2,num//2+1):
+        if num%den == 0:
+            return 'not a prime number'
+            break
+    return 'prime number'
+num =7
+print(prime(num))
