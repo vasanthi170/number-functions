@@ -1,10 +1,9 @@
-#reversing the number
-num = 5234
-res = 0
-pos = 10**(len(str(num))-1)
-while num!=0:
-    rem = num%10
-    res = res+rem*pos
-    num = num//10
-    pos = pos//10
-print(res)
+#reversing the number using functions
+def rev(num,res=0):
+    while num!=0:
+        rem = num%10
+        res = res*10+rem
+        num = num//10
+    return res
+num=1234
+print(rev(num))
