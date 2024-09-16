@@ -1,0 +1,9 @@
+#adding all digits in a number using function
+def add(num,res=0):
+    while num!=0:
+        rem = num%10
+        res = res + rem
+        num = num//10
+    return res
+num =1234
+print(add(num))
