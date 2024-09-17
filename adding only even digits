@@ -1,0 +1,10 @@
+#adding only even digits using function
+def even(num,res=0):
+    while num!=0:
+        rem = num%10
+        if rem % 2== 0:
+            res = res+rem
+        num //= 10
+    return res
+num = 1234
+print(even(num))
