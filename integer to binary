@@ -1,0 +1,11 @@
+#integer to binary using function
+def int_bin(num,pos=1,res=0):
+    while num != 0:
+        rem = num%2
+        res = rem*pos +res
+        num = num//2
+        pos = pos*10
+    return res
+num = 14
+print(bin_int(num))
+        
