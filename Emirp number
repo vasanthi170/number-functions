@@ -1,0 +1,18 @@
+#emirp using functions
+def emirp(num,copy,res=0):
+    while num!=0:
+        res = res*10+num%10
+        num = num//10
+    if res!=copy:
+        for den in range (2,copy//2+1):
+            if copy % den == 0:
+                return 'not a prime'
+        else:
+            for den in range(2,copy//2+1):
+                if res % den == 0:
+                    return 'not prime'
+            return 'emirp number'
+    else:
+        print('not an emirp number')
+num = 13
+print(emirp(num,num)) 
