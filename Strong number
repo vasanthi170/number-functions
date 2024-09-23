@@ -1,0 +1,13 @@
+#strong number using functions
+def strong(num,fact=1,ans=0):
+    dup=num
+    while num != 0:
+        rem = num%10
+        fact = 1
+        for val in range(1,rem+1):
+            fact = fact*val
+        ans = fact + ans
+        num = num//10
+    return ans == dup
+num = 145
+print('strong number' if strong(num) else 'not a strong')
