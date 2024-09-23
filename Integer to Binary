@@ -8,4 +8,3 @@ def int_bin(num,pos=1,res=0):
     return res
 num = 14
 print(bin_int(num))
-        
